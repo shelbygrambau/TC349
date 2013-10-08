@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin: 0 auto;
+}
+
+img {
+	margin: 20px;
+}
+
+h1 {
+	padding: 10px;
+	padding-top: 20px;
+	background: #666;
+	color: #fff;
+	margin: 0 auto;
+	font-family:Verdana, Geneva, sans-serif;
+	width: 1000px;
+}
+
+h2 {
+	background: #999;
+	padding: 5px;
+	margin: 0 auto;
+	font-family:Verdana, Geneva, sans-serif;
+	color: #fff;
+	width: 1010px;
+}
+
+p {
+	background: #CCC;
+	margin: 0 auto;
+	font-family:Verdana, Geneva, sans-serif;
+	padding: 5px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	width: 1010px;
+}
