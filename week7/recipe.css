@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background: url(cswd_week_7_resources/bg.png);
+	margin: 0;
+	font-family: "Helvetica", sans-serif;
+	line-height: 1.4em;
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+h1 {
+	background: url(cswd_week_7_resources/logo.png) no-repeat;
+	height: 100px;
+	width: 800px;
+	text-indent: -9000px;
+	padding: 0;
+	margin: 20px 0 20px 0;
+	color: #fff;
+}
+
+h2 {
+	margin-bottom: 10px;
+}
+
+h3 {
+	margin-bottom: 5px;
+}
+
+hgroup {
+	color: #fff;
+	margin: 0 0 40px 0;
+}
+
+.container {
+	width: 800px;
+	margin: 0 auto;
+}
+
+
+#recipes {
+	padding: 15px;
+	background: #fff url(cswd_week_7_resources/yum.jpg) no-repeat;
+	border-top: 10px solid #222;
+}
+
+article {
+	margin: 260px 0 0 0;
+}
+
+table, tr, td {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+
+table td {
+	padding: 5px;
+}
