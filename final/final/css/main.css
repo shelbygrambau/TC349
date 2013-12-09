@@ -1,0 +1,970 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* CSS COLORS:
+light blue: #ADCCD9
+sand: #F2E5D5
+bright orange: #BF6E3F
+darker orange: #A64D2D
+red brown: #401B13
+light grey bkg #d7d7d7
+*/
+
+html,body {
+	margin:0 auto;
+	padding:0;
+}
+h1,h2,h3,h4,h5,h6,ul {
+	margin:0;
+	padding:0;
+}
+.alignLeft {
+	float:left;
+}
+.alignRight {
+	float:right;
+}
+@font-face { 
+	font-family: HelveticaNeue; src:url(../HelveticaNeue.dfont); 
+}
+body {
+	font:90% "HelveticaNeue", HelveticaNeueLight, Helvetica-Neue-Light, Helvetica, Arial, Sans-Serif;
+}
+.homepage {
+	background:url(../img/background.png) no-repeat;
+}
+.fares {
+	background:url(../img/fares-background.png) no-repeat;
+	max-height:4219px;
+}
+.riding-cata {
+	background:url(../img/riding-cata-background.png) no-repeat;
+	max-height:1800px;
+}
+.maps {
+	background:url(../img/maps-background.png) no-repeat;
+	max-height:1800px;
+}
+.rider-tools {
+	
+}
+.contact {
+
+}
+.about {
+
+}
+#container {
+	margin:0 auto;
+	width:1000px;
+	min-width:730px;
+	background-color:transparent;
+}
+#main {
+	width:100%;
+	min-width:730px;
+	padding-right:10px;
+	background-color:transparent;
+}
+p {
+	font-size:1.1em;
+}
+a img {
+	border:0;
+}
+/* ##################### CSS STYLES FOR HEADER ########################## */
+#header {
+	float:left;
+	min-height:68px;
+	width:1000px;
+	min-width:730px;
+	background:#ADCCD9;
+	height:138px;
+
+}
+#header img {
+	margin:0;
+	padding:0;
+}
+#top-links, #top-links ul {
+	list-style:none;
+}
+#top-links {
+	margin:0;
+	position:relative;
+	background: #ADCCD9;
+	clear:left;
+	width:1000px;
+}
+#top-links li {
+	float:left;
+	margin:0;
+	background: #ADCCD9;
+	height: 90px;
+	padding: 10px 50px 10px 0;
+}
+#top-links a {
+	display:block;
+	text-decoration:none;
+	font-size:10px;
+	color:F2E5D5;
+}
+#drop-down a {
+	font-size:18px;
+	color: #fff;
+	padding: 15px 0 5px 10px;
+	text-decoration:none;
+}
+#drop-down a:hover {
+	color:#ADCCD9;
+}
+#drop-down li {
+	height:90px;
+	width:125px;
+	border-right: 1px solid #bfe0ee;
+	margin: 10px 0 10px 0px;
+	padding-left: 10px;
+}
+#drop-down li:hover {
+	background: #bfe0ee;
+}
+#search li {
+	height: 90px;
+	width:240px;
+}
+#header img {
+	padding:10px 0px 10px 20px;
+
+}
+#main-navigation, #main-navigation ul {
+	list-style:none;
+
+}
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+nav ul {
+	background: #A64D2D;
+	padding: 0;
+	margin:0; 
+	list-style: none;
+	position: relative;
+	display: inline-table;
+
+}
+nav ul:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+nav ul li {
+	float: left;
+}
+nav ul li:hover {
+	background: #F2E5D5;
+}
+nav ul li:hover a {
+	color: #A64D2D;
+}
+nav ul li a {
+	display: block; 
+	padding: 15px 49.9px;
+	color: #F2E5D5;
+	text-decoration: none;
+}
+nav ul ul {
+	background: #F2E5D5;  
+	padding: 0;
+	position: absolute; 
+	top: 100%;
+}
+	nav ul ul li {
+		float: none; 
+		border-top: 1px solid #CCC;
+		border-bottom: 1px solid #ccc;
+		position: relative;
+	}
+		nav ul ul li a {
+			padding: 15px 40px;
+			color: #F2E5D5;
+		}	
+			nav ul ul li a:hover {
+				background: #A64D2D;
+				color: #F2E5D5;
+			}
+#main-navigation {
+    margin-bottom:0px;
+    width:1000px;
+    clear:left;
+    position:relative;
+    z-index:100;
+	border-top: 5px solid #F2E5D5;
+	border-bottom: 2px solid #401B13;
+
+}
+/* ##################### CSS STYLES FOR SIDE NAV ########################## */
+
+#side-nav {
+	float:left;
+	display:inline-block;
+	width:214px;
+	height:400px;
+	margin-top:55px;
+	clear:left;
+
+}	
+#side-nav li {
+	list-style:none;
+	border-top: solid 1px #e3e3e3;
+}
+#side-nav a {
+	padding: 10px;
+	display:block;
+	text-decoration:none;
+	font-size:16px;
+	color:#333;
+}
+#side-nav a:hover {
+	background:#f3f3f3;
+	color:#A64D2D;
+}
+#side-nav img {
+	padding-top: 5px;
+	padding-left:5px;
+}
+
+/* ##################### CSS STYLES FOR HOME PAGE ########################## */
+#top-content {
+	display: inline-block;
+	margin-top:55px;
+	margin-bottom: 5px;
+
+}
+#graphic-promo {
+	float:left;
+	margin-right: 10px;
+	width:460px;
+	height: 255px;
+	background:#999;
+}
+#plan-a-trip {
+	display:inline-block;
+	float:left;
+	background:#d7d7d7;
+	width:530px;
+	height:255px;
+}
+#plan-a-trip h3 {
+	background: #949594;
+	border-bottom:9px solid #ADCCD9;
+	font-size:22px;
+	padding-left:7px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+#plan-a-trip a {
+	color:#000;
+	font-size:22px;
+	text-decoration:none;
+}
+#plan-a-trip a:hover {
+	color:#666;
+}
+legend {
+	padding: 10px;
+	font-size: 16px;
+}
+label {
+	padding: 10px;
+	font-size: 14px;
+}
+#button {
+	padding-bottom: 30px;
+	margin-left: 430px;
+}
+input {
+	width: 75px;
+	height: 30px;
+	color:#333;
+}
+input:hover {
+	color:#999;
+}
+#rider-alerts {
+	display: inline-block;
+	float:left;
+	background:#d7d7d7;
+	width:460px;
+	margin-right: 10px;
+	height: 159px;
+}
+#rider-alerts p {
+	font-size:14px;
+	width:460px;
+	padding-left:7px;
+}
+#rider-alerts a {
+	color:#000;
+	text-decoration:none;
+}
+#rider-alerts a:hover {
+	color:#666;
+}
+#rider-alerts h3 {
+	font-size:22px;
+	width:453px;
+	background:#949594;
+	border-bottom: 9px solid #ADCCD9;
+	padding-left:7px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+#rider-alerts h4 {
+	font-size:16px;
+	width:460px;
+	padding-top:7px;
+	padding-left:7px;
+}
+#find-a-route, #locate-a-stop {
+	display: inline-block;
+
+}
+#find-a-route li, #locate-a-stop li {
+	list-style:none;
+	float:left;
+	text-decoration:none;
+}
+
+#find-a-route a {
+	padding:0;
+	margin:0;
+	text-decoration:none;
+	margin-right: 5px;
+	list-style:none;
+}
+#locate-a-stop a {
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	list-style:none;
+}
+#find-a-route a:hover, #locate-a-stop a:hover {
+	opacity:.8;
+}
+
+/* ##################### CSS STYLES FOR FARES PAGE ########################## */
+#fares-body {
+	float:left;
+	display:inline;
+	width:786px;
+	background:#fff;
+	display:inline-block;
+	margin-left:215px;
+}
+
+#fares {
+	margin-top:55px;
+	margin-left: 25px;
+	background:#fff;
+
+}
+#fares h3, #passes h3, #purchase-loc h3, #discount-id h3 {
+	background:#ADCCD9;
+	font-size:20px;
+	font-weight:200;
+	padding: 10px 10px 10px 10px;
+	margin-bottom: 15px;
+}
+#fares h4 {
+	font-size: 18px;
+	font-weight:100;
+	margin-bottom:5px;
+	color:#A64D2D;
+}
+#fares img {
+	padding-top: 5px;
+	padding-bottom:20px;
+}
+#fares p {
+	font-size:14px;
+	line-height:6px;
+}
+#fares li {
+	font-size:14px;
+	list-style:inside;
+	line-height: 19px;
+}
+#passes {
+	padding-top:15px;
+	margin-left:15px;
+}
+#passes a {
+	text-decoration:none;
+	color:#BF6E3F;
+	font-size:17px;
+}
+#passes a:hover {
+	color:#A64D2D;
+	text-decoration:underline;
+}
+#purchase-loc {
+	padding-top: 20px;
+	margin-left:15px;
+}
+#purchase-loc h5{
+	font-size:14px;
+	padding-top: 10px;
+	padding-bottom:2px;
+}
+#purchase-loc p{
+	font-size:13px;
+	line-height:8px;
+}
+#purchase-loc ul {
+	list-style:none;
+}
+#purchase-loc h4 {
+	font-size:13px;
+	font-weight:200;
+	padding-top: 10px;
+}
+#discount-id {
+	padding-top:15px;
+	padding-bottom: 17px;
+	margin-left:15px;
+}
+#discount-id h4 {
+	font-weight:500;
+}
+#discount-id h5 {
+	font-size:15px;
+	padding-top: 16px;
+	color: #A64D2D;
+
+}
+#discount-id p {
+	font-size:14px;
+	line-height:19px;
+	letter-spacing:.9px;
+}
+
+/* ##################### CSS STYLES FOR RIDING CATA PAGE ########################## */
+#riding-cata-body {
+	float:left;
+	display:inline;
+	width:786px;
+	background:#fff;
+	display:inline-block;
+	margin-left:215px;
+
+}
+#riding-cata {
+	margin-top:55px;
+	margin-left: 25px;
+	background:#fff;
+	
+
+}
+#riding-cata h3, #cata-rules h3, #rider-tools-body h3, #about h3 {
+	background:#ADCCD9;
+	font-size:20px;
+	font-weight:200;
+	padding: 10px 10px 10px 10px;
+	margin-bottom: 15px;
+}
+#riding-cata h4, #cata-rules h4, #rider-tools-body h4 {
+	font-size: 18px;
+	font-weight:100;
+	margin-bottom:5px;
+	color:#A64D2D;
+}
+#riding-cata h5, #rider-tools-body h5 {
+	font-size:16px;
+}
+#riding-cata p, #rider-tools-body p, #about p {
+	line-height:25px;
+}
+#riding-cata a, #rider-tools-body a {
+	text-decoration:none;
+	color:#BF6E3F;
+	font-size:17px;
+}
+#riding-cata a:hover, #rider-tools-body a:hover {
+	color:#A64D2D;
+	text-decoration:underline;	
+}
+#cata-rules {
+	margin-top:55px;
+	margin-left: 25px;
+	background:#fff;
+
+}
+#cata-rules p {
+	font-size:16px;
+}
+#cata-rules ol li {
+	line-height: 25px;
+	font-size:15px;
+}
+#cata-rules ol ul li {
+	list-style:inside;
+	text-indent:10px;
+}
+
+/* ##################### CSS STYLES FOR RIDER TOOLS PAGE ########################## */
+#rider-tools-body {
+	float:left;
+	display:inline;
+	width:780px;
+	background:#fff;
+	display:inline-block;
+	margin-left:225px;
+	margin-top: 55px;
+	padding-bottom:20px;
+
+}
+#rider-tools-body h3 {
+	margin-bottom:10px;
+
+}
+#rider-tools-body h5, {
+	margin-bottom:10px;
+}
+#rider-tools-body h4 {
+	margin-top:10px;
+}
+#rider-tools-body li {
+	list-style:inside;
+}
+#alerts {
+	margin-top:10px;
+}
+#look-up h3 {
+	padding-top:10px;
+	padding-bottom:20px;
+}
+#contact {
+	
+	display:inline;
+	width:780px;
+	background:#fff;
+	display:inline-block;
+	margin-left:225px;
+	margin-top: 55px;
+	padding-bottom:20px;
+}
+#about {
+	display:inline;
+	width:780px;
+	background:#fff;
+	display:inline-block;
+	margin-top: 55px;
+	padding-bottom:20px;
+}
+/* ##################### CSS STYLES FOR MAPS PAGE ########################## */
+#maps {
+	float:left;
+	display:inline;
+	width:865px;
+	background:#fff;
+	display:inline-block;
+	margin-left:215px;
+	margin-top:55px;
+}
+#maps h3{
+	background:#ADCCD9;
+	font-size:20px;
+	font-weight:200;
+	padding: 10px 10px 10px 10px;
+	margin-bottom: 15px;
+}
+#maps img {
+	padding-bottom:20px;
+}
+/* ##################### CSS STYLES FOR FOOTER ########################## */
+#footer {
+	clear:left;
+	background-color: #401B13;
+	width:1000px;
+	padding:0px;
+	margin-top:7px;
+	
+}
+#footer-title {
+	display:inline-block;
+	height:90px;
+	border-bottom: solid #666 1px;
+	margin-left:20px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:25px;
+}
+#footer-title p {
+	font-size:10.5px;
+	max-width:300px;
+	color: #fff;
+	letter-spacing:.9px;
+	line-height: 15px;
+	padding-left: 20px;
+	padding-right: 305px;
+}
+#footer-title li {
+	float:left;
+	list-style: none;
+	margin: 0 10px 0 0;
+	letter-spacing:.05em;
+	padding-top: 20px;
+}
+#footer-title img {
+	padding:0;
+	margin:0;
+}
+#footer-title a:hover {
+	opacity:.8;
+}
+#link-block {
+	display:inline-block;
+}
+#link-block ul {
+	float:left;
+	padding: 20px 30px 20px 0;
+	margin-left:20px;
+	
+}
+#link-block li {
+	list-style:none;
+}
+#link-block p {
+	font-size:12px;
+	font-weight:bold;
+	padding: 0;
+	margin:0;
+	color: #fff;
+}
+#link-block a {
+	font-size:11px;
+	color:#fff;
+	text-decoration:none;
+}
+#link-block a:hover {
+	color:#BF6E3F;
+}
+#footer-line {
+	display: inline-block;
+	background:#401B13;
+	border-top: solid #666 1px;
+	margin-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+#footer-line li {
+	float: left;
+	font-size:10px;
+	margin: 5px 22px 0 0;
+	list-style: none;
+	color:#CCC;
+	padding-right: 1px;
+}
+#footer-line a {
+	color:#fff;
+	text-decoration:none;
+}
+#footer-line a:hover {
+	color:#BF6E3F;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
